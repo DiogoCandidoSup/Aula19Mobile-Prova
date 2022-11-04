@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:orientation="vertical"
+    android:background="@color/black"
+    >
+
+    <ImageView
+        android:id="@+id/imagem"
+        android:src="@drawable/ic_coisa"
+
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:text="APP RACHA CONTA"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/edConta"
+        android:hint="Valor total da conta"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:id="@+id/edPessoas"
+        android:hint="N° de pessoas"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:inputType="number"
+        android:maxLines="1"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <EditText
+            android:id="@+id/edParcelas"
+            android:hint="N° de parcelas"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+
+            android:inputType="number"
+            android:maxLines="1"
+            />
+
+        <EditText
+            android:id="@+id/edJuros"
+            android:hint="% de juros"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+
+            android:inputType="number"
+            android:maxLines="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btCalcular"
+            android:text="Calcular"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+            android:id="@+id/btLimpar"
+            android:text="Limpar"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:text="RESULTADO"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:background="@android:color/darker_gray"
+        android:singleLine="false"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        />
+
+</LinearLayout>
